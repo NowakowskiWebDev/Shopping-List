@@ -4,11 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
     <title>Shopping list</title>
 </head>
 
 <body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__heading">Lista zakupów</h1>
+            <p class="header__paragraph">Jest to aplikacja internetowa umożliwiająca zrobienie listy zakupów z podziałem
+                na kategorie</p>
+            <form class="search">
+                <input type="text" class="search__input">
+                <button class="btn btn--search">Wyszukaj nazwy</button>
+            </form>
+            <div class="search__buttons-nav">
+                <button class="btn btn--products">Produkty</button>
+                <button class="btn btn--category">Kategorie</button>
+                <button class="btn btn--week">Lista zakupów na tydzień</button>
+            </div>
+        </header>
+        <main class="main">
+            <section class="product-section"></section>
+            <section class="category-section"></section>
+            <section class="week-section"></section>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">&copy; Łukasz Nowakowski</p>
+        </footer>
 
+    </div>
 </body>
 
 </html>
