@@ -1,3 +1,14 @@
 @import 'abstracts/fonts';
+@import 'abstracts/variables';
 
 @import 'base/base';
+
+@import 'components/body';
+@import 'components/button';
+@import 'components/list';
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/products';
+@import 'layout/week';
+@import 'layout/footer';
