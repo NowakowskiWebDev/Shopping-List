@@ -1,0 +1,30 @@
+.product {
+    display: flex;
+
+    &__group {
+        display: inline-block;
+        position: relative;
+    }
+
+    // STYLE FOR A WHILE
+    &__input {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        padding: .5rem 1rem;
+        font-size: $default-font-size;
+        width: 15rem;
+        border: 1px solid $color-black;
+    }
+
+    // STYLE FOR A WHILE
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: red;
+        z-index: 1;
+        transform: translateY(-100%);
+    }
+
+}

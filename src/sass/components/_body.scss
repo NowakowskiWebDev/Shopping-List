@@ -13,7 +13,7 @@ body {
         "header header header header"
         "shop-list shop-list shop-list shop-list"
         "footer footer footer footer";
-    grid-template-rows: min-content minmax(0, auto) min-content;
+    grid-template-rows: min-content minmax(20rem, auto) min-content;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;

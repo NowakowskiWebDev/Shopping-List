@@ -25,10 +25,112 @@
             </div>
         </header>
         <main class="main">
-            <section class="product-section">
+            <!-- ---------CREATION SECTION--------- -->
+            <section class="creation-section">
+                <form class="product__creation">
+                    <div class="product__group">
+                        <label class="product__label" for="product__input--name">Wpisz nazwę dodawanego
+                            produktu</label>
+                        <input id="product__input--name" class="product__input product__input--name" type="text"
+                            placeholder="Wpisz nazwe produktu">
+                    </div>
+                    <div class="product__group">
+                        <label class="product__label" for="product__input--category">Wpisz kategorię dodawanego
+                            produktu</label>
+                        <input id="product__input--category" class="product__input product__input--category" type="text"
+                            placeholder="Wpisz nazwe produktu">
+                    </div>
+                    <div class="product__group">
+                        <label class="product__label" for="product__input--number">Wpisz ilość albo
+                            wagę</label>
+                        <input id="product__input--number" class="product__input product__input--number" type="number"
+                            placeholder="Wpisz ilość albo wagę">
+                    </div>
+                    <select name="unit" id="unit">
+                        <option value="">--Proszę wybrać jednostkę--</option>
+                        <option value="kg">kg</option>
+                        <option value="g">g</option>
+                        <option value="litr">l</option>
+                        <option value="number">Ilość</option>
+                    </select>
+                    <button class="btn btn--creation-add">Dodaj</button>
+                </form>
             </section>
-            <section class="category-section"></section>
-            <section class="week-section"></section>
+
+            <!-- ---------PRODUCT SECTION--------- -->
+            <section class="product-section">
+                <ul class="product__list">
+                    <li class="product__item">
+                        <div class="product__item-ingredients">
+                            <p class="product__item-count">20</p>
+                            <p class="product__item-unit">kg</p>
+                            <p class="product__item-name">kapusty</p>
+                        </div>
+                        <div class="btn-product__group">
+                            <button class="btn btn--product-item-done">Zrobione</button>
+                            <button class="btn btn--product-item-remove">Usuń</button>
+                            <button class="btn btn--product-item-edit">Edytuj</button>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__item-ingredients">
+                            <p class="product__item-count">10</p>
+                            <p class="product__item-unit">gram</p>
+                            <p class="product__item-name">drożdży</p>
+                        </div>
+                        <div class="btn-product__group">
+                            <button class="btn btn--product-item-done">Zrobione</button>
+                            <button class="btn btn--product-item-remove">Usuń</button>
+                            <button class="btn btn--product-item-edit">Edytuj</button>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__item-ingredients">
+                            <p class="product__item-count">10</p>
+                            <p class="product__item-unit">l</p>
+                            <p class="product__item-name">mleka</p>
+                        </div>
+                        <div class="btn-product__group">
+                            <button class="btn btn--product-item-done">Zrobione</button>
+                            <button class="btn btn--product-item-remove">Usuń</button>
+                            <button class="btn btn--product-item-edit">Edytuj</button>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__item-ingredients">
+                            <p class="product__item-count">20</p>
+                            <p class="product__item-unit">sztuk</p>
+                            <p class="product__item-name">długopisów</p>
+                        </div>
+                        <div class="btn-product__group">
+                            <button class="btn btn--product-item-done">Zrobione</button>
+                            <button class="btn btn--product-item-remove">Usuń</button>
+                            <button class="btn btn--product-item-edit">Edytuj</button>
+                        </div>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__item-ingredients">
+                            <p class="product__item-count">10</p>
+                            <p class="product__item-unit">kg </p>
+                            <p class="product__item-name">ziemniaków</p>
+                        </div>
+                        <div class="btn-product__group">
+                            <button class="btn btn--product-item-done">Zrobione</button>
+                            <button class="btn btn--product-item-remove">Usuń</button>
+                            <button class="btn btn--product-item-edit">Edytuj</button>
+                        </div>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- ---------CATEGORY SECTION--------- -->
+            <section class="category-section">
+            </section>
+
+            <!-- ---------WEEK SECTION--------- -->
+            <section class="week-section">
+            </section>
         </main>
         <footer class="footer">
             <p class="footer__paragraph">&copy; Łukasz Nowakowski</p>

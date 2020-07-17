@@ -1,0 +1,23 @@
+.product {
+
+    &__list {
+        margin: 2rem 0;
+    }
+
+    &__item {
+        display: flex;
+
+        &-ingredients {
+            display: flex;
+            font-size: 2rem;
+        }
+
+        &-count {}
+
+        &-ingredient {}
+
+        &-unit {}
+
+        &-name {}
+    }
+}
