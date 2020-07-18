@@ -8,10 +8,11 @@
         display: flex;
 
         &-ingredients {
+            position: relative;
             display: flex;
             font-size: 2rem;
 
-            &>* {
+            &>*:not(:last-child) {
                 margin-right: 1rem;
             }
         }
@@ -23,5 +24,27 @@
         &-unit {}
 
         &-name {}
+
+        &__line {
+            display: none;
+        }
+
+        &-line--active {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-right: 0 auto;
+            transform: translateY(-50%);
+            width: 95%;
+            height: 2px;
+            background-color: black;
+            z-index: 1;
+        }
+
+
+        .product-edit {
+            display: block;
+        }
     }
 }
