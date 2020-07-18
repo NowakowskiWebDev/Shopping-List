@@ -11,13 +11,8 @@ const clearInput = () => {
     elements.selectUnit.value = '';
 };
 
-// EDIT PRODUCTS 
-const editClearInput = () => {
-    elements.inputEditName = '';
-    elements.inputEditCategory = '';
-    elements.inputEditCount = '';
-    elements.selectEditUnit = '';
-}
+
+const tab = []
 
 // RENDER PRODUCTS
 export const renderProducts = (count = elements.inputCount.value, unit = elements.selectUnit.value, name = elements.inputName.value, category = elements.inputCategory.value) => {
@@ -41,35 +36,37 @@ export const renderProducts = (count = elements.inputCount.value, unit = element
         elements.productLists.insertAdjacentHTML('beforeend', markup);
         clearInput()
         elements.paragWarning.innerHTML = ''
+        return true
     } else {
         elements.paragWarning.innerHTML = 'Proszę uzuepłnić wszystkie pola!'
+        return false
     }
 };
 
-// NIE WIEM
-// export const renderEdit = () => {
-//     const markup = `
-//         <div class="product-edit--active">
-//         <form class="product-edit__creation">
-//             <input id="product-edit__input--count"
-//                 class="product-edit__input product-edit__input--count" type="number"
-//                 placeholder="Wpisz ilość albo wagę">
-//             <select class="product-edit__select" name="unit" id="unit">
-//                 <option value="">--Proszę wybrać jednostkę--</option>
-//                 <option value="kg">kg</option>
-//                 <option value="g">g</option>
-//                 <option value="litr">l</option>
-//                 <option value="number">Ilość</option>
-//             </select>
-//             <input id="product-edit_input--name"
-//                 class="product-edit__input product-edit__input--name" type="text"
-//                 placeholder="Wpisz nazwe produktu">
-//             <input id="product-edit__input--category"
-//                 class="product-edit__input product-edit__input--category" type="text"
-//                 placeholder="Wpisz nazwe produktu">
+// RENDER EDIT PRODUCTS
+export const renderEdit = () => {
+    const markup = `
+        <div class="product-edit--active">
+        <form class="product-edit__creation">
+            <input id="product-edit__input--count"
+                class="product-edit__input product-edit__input--count" type="number"
+                placeholder="Wpisz ilość albo wagę">
+            <select class="product-edit__select" name="unit" id="unit">
+                <option value="">--Proszę wybrać jednostkę--</option>
+                <option value="kg">kg</option>
+                <option value="g">g</option>
+                <option value="litr">l</option>
+                <option value="number">Ilość</option>
+            </select>
+            <input id="product-edit_input--name"
+                class="product-edit__input product-edit__input--name" type="text"
+                placeholder="Wpisz nazwe produktu">
+            <input id="product-edit__input--category"
+                class="product-edit__input product-edit__input--category" type="text"
+                placeholder="Wpisz nazwe produktu">
 
-//             <button class="btn btn--edit-change">Zatwierdź</button>
-//     </div>
-//         `;
-//     elements.productLists.insertAdjacentHTML('beforeend', markup);
-// }
+            <button class="btn btn--edit-change">Zatwierdź</button>
+    </div>
+        `;
+    elements.productLists.insertAdjacentHTML('beforeend', markup);
+}

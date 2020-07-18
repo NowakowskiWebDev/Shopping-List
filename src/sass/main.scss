@@ -14,3 +14,9 @@
 @import 'layout/products';
 @import 'layout/week';
 @import 'layout/footer';
+
+.btn-product__group {
+    &>* {
+        margin: 2rem 2rem
+    }
+}

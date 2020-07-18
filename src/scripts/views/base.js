@@ -2,7 +2,7 @@ export const elements = {
     // SEARCH
     searchForm: document.querySelector('.search'),
     searchInput: document.querySelector('.search__input'),
-    searchBtn: document.querySelector('.search--btn'),
+    searchBtn: document.querySelector('.btn--search'),
 
     // SEARCH BUTTONS NAV
     productsBtn: document.querySelector('.btn--products'),
@@ -21,16 +21,9 @@ export const elements = {
     // LIST PRODUCTS
     ingredientsList: document.querySelectorAll('.product__item-ingredients'),
     backgroundLine: document.querySelector('.product__item-line'),
+    productItem: document.querySelector('.product__item'),
+    productsName: document.querySelectorAll('.product__item-name'),
     doneBtn: document.querySelector('.btn--product-item-done'),
     removeBtn: document.querySelector('.btn--product-item-remove'),
     editBtn: document.querySelector('.btn--product-item-edit'),
-
-    // LIST EDIT PRODUCT
-    productEditLists: document.querySelector('.product-edit__lists'),
-    inputEditName: document.querySelector('.product-edit__input--name'),
-    inputEditCategory: document.querySelector('.product-edit__input--category'),
-    inputEditCount: document.querySelector('.product-edit__input--count'),
-    selectEditUnit: document.querySelector('.product-edit__select'),
-    addEditBtn: document.querySelector('.btn--edit-change'),
-
 }
