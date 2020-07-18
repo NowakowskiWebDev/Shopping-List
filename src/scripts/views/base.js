@@ -23,7 +23,8 @@ export const elements = {
     backgroundLine: document.querySelector('.product__item-line'),
     productItem: document.querySelector('.product__item'),
     productsName: document.querySelectorAll('.product__item-name'),
-    doneBtn: document.querySelector('.btn--product-item-done'),
-    removeBtn: document.querySelector('.btn--product-item-remove'),
-    editBtn: document.querySelector('.btn--product-item-edit'),
+    // groupBtn: document.querySelectorAll('.btn-product__group'),
+    // doneBtn: document.querySelector('.btn--product-item-done'),
+    // removeBtn: document.querySelector('.btn--product-item-remove'),
+    // editBtn: document.querySelector('.btn--product-item-edit'),
 }
